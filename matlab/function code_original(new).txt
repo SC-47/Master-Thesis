@@ -1,0 +1,15 @@
+F = [ (1+gamma+alpha)*pb*bd_L+((1+gamma)*k2+alpha)*wf_L*k1*(bd_L)^(k2)-alpha*(wf_L*(1-k0)+am-c_);
+      (1+gamma+alpha)*(pb+pe)*be_L+((1+gamma)*k2+alpha)*wf_L*k1*(be_L)^(k2)-alpha*(wf_L*(1-k0)+am-c_);
+      (1+gamma+alpha)*(pb+pe)*b_H+((1+gamma)*k2+alpha)*wf_H*k1*(b_H)^(k2)-alpha*(wf_H*(1-k0)+am-c_);
+      (1+gamma)*log((pb*bd_L+wf_L*k1*k2*(bd_L)^(k2))/((pb+pe)*be_L+wf_L*k1*k2*(be_L)^(k2)))+alpha*log(bd_L/be_L)+(beta/(1-theta))*(wf_L^(1-theta)-wf_H^(1-theta));
+      wf_L-A*pi*(Z_L)^(rho-1)*(pi*Z_L^(rho)+(1-pi)*Z_H^(rho))^(1/rho-1);
+      wf_H-A*(1-pi)*(Z_H)^(rho-1)*(pi*Z_L^(rho)+(1-pi)*Z_H^(rho))^(1/rho-1);
+     ];
+
+Z_L = (N_L*(R*tfd_L+(1-R)*tfe_L))
+    = (N_L*(R*(1-k0-((gamma*pb*bd_L+(gamma*k2+alpha)*wf_L*k1*(bd_L)^(k2))/(alpha*wf_L)))+(1-R)*(1-k0-((gamma*(pb+pe)*be_L+(gamma*k2+alpha)*wf_L*k1*(be_L)^(k2))/(alpha*wf_L))))) 
+Z_H = (N_H*tf_H)
+    = (N_H*(1-k0-((gamma*(pb+pe)*b_H+(gamma*k2+alpha)*wf_H*k1*(b_H)^(k2))/(alpha*wf_H))))
+tfd_L = (1-k0-((gamma*pb*bd_L+(gamma*k2+alpha)*wf_L*k1*(bd_L)^(k2))/(alpha*wf_L)));
+tfe_L = (1-k0-((gamma*(pb+pe)*be_L+(gamma*k2+alpha)*wf_L*k1*(be_L)^(k2))/(alpha*wf_L)));
+tf_H  = (1-k0-((gamma*(pb+pe)*b_H+(gamma*k2+alpha)*wf_H*k1*(b_H)^(k2))/(alpha*wf_H)));

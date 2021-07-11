@@ -1,0 +1,9 @@
+function F = myfun_original (bd_L,be_L,b_H,wf_L,wf_H,R) % 
+%known parameter : pb pe am c_ k0 k1 k2 N_L N_H
+%assumption paramter : pi rho
+%target b_L b_H wf_L wf_H R          
+F = [ (1+phi*(bd_L^(1-eta)))*pb*bd_L+(k2+phi*(bd_L^(1-eta)))*wf_L*k1*((bd_L)^(k2))-(phi*(bd_L^(1-eta)))*(wf_L*(1-k0)+am-c_);
+      (1+phi*(be_L^(1-eta)))*(pb+pe)*be_L+(k2+phi*(be_L^(1-eta)))*wf_L*k1*((be_L)^(k2))-(phi*(be_L^(1-eta)))*(wf_L*(1-k0)+am-c_);
+      (1+phi*(b_H^(1-eta)))*(pb+pe)*b_H+(k2+phi*(b_H^(1-eta)))*wf_H*k1*((b_H)^(k2))-(phi*(b_H^(1-eta)))*(wf_H*(1-k0)+am-c_);
+     ];
+

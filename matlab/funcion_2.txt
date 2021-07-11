@@ -1,0 +1,15 @@
+F2 = [ (1+gamma+(phi*bd_L^(1-eta)))*pb*bd_L+((1+gamma)*k2+(phi*bd_L^(1-eta)))*wf_L*k1*(bd_L)^(k2)-(phi*bd_L^(1-eta))*(wf_L*(1-k0)+am-c_);
+       (1+gamma+(phi*be_L^(1-eta)))*(pb+pe)*be_L+((1+gamma)*k2+(phi*be_L^(1-eta)))*wf_L*k1*(be_L)^(k2)-(phi*be_L^(1-eta))*(wf_L*(1-k0)+am-c_);
+       (1+gamma+(phi*b_H^(1-eta)))*(pb+pe)*b_H+((1+gamma)*k2+(phi*b_H^(1-eta)))*wf_H*k1*(b_H)^(k2)-(phi*b_H^(1-eta))*(wf_H*(1-k0)+am-c_);
+       b_L-(R*bd_L+(1-R)*be_L);
+       tf_L-(R*tfd_L+(1-R)*tfe_L);
+       tf_H-(1-k0-((gamma*(pb+pe)*b_H+(gamma*k2+(phi*b_H^(1-eta)))*wf_H*k1*(b_H)^(k2))/(wf_H*(phi*b_H^(1-eta)))));
+      ];
+
+F = [ (1+gamma+(phi*bd_L^(1-eta)))*pb*bd_L+((1+gamma)*k2+(phi*bd_L^(1-eta)))*wf_L*k1*(bd_L)^(k2)-(phi*bd_L^(1-eta))*(wf_L*(1-k0)+am-c_);
+      (1+gamma+(phi*be_L^(1-eta)))*(pb+pe)*be_L+((1+gamma)*k2+(phi*be_L^(1-eta)))*wf_L*k1*(be_L)^(k2)-(phi*be_L^(1-eta))*(wf_L*(1-k0)+am-c_);
+      (1+gamma+(phi*b_H^(1-eta)))*(pb+pe)*b_H+((1+gamma)*k2+(phi*b_H^(1-eta)))*wf_H*k1*(b_H)^(k2)-(phi*b_H^(1-eta))*(wf_H*(1-k0)+am-c_);
+      b_L-(R*bd_L+(1-R)*be_L);
+      tf_L-(R*(1-k0-((gamma*pb*bd_L+(gamma*k2+(phi*bd_L^(1-eta)))*wf_L*k1*(bd_L)^(k2))/(wf_L*(phi*bd_L^(1-eta)))))+(1-R)*(1-k0-((gamma*(pb+pe)*be_L+(gamma*k2+(phi*be_L^(1-eta)))*wf_L*k1*(be_L)^(k2))/(wf_L*(phi*be_L^(1-eta))))));
+      tf_H-(1-k0-((gamma*(pb+pe)*b_H+(gamma*k2+(phi*b_H^(1-eta)))*wf_H*k1*(b_H)^(k2))/(wf_H*(phi*b_H^(1-eta)))));
+      ];

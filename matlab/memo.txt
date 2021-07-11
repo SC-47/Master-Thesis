@@ -1,0 +1,8 @@
+pi 完全用資料計算
+tf_L tf_H (Human) N_L N_H (fertility) rho=0.401
+A 定住 男性工資
+
+假設alpha gamma
+用資料wf_L wf_H
+解bd_L be_L b_H
+
